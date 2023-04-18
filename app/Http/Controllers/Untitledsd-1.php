@@ -1,0 +1,13 @@
+$table->string('date');
+            $table->string('benificiary_name');
+            $table->string('commodities');
+            $table->string('payment_type');
+            $table->string('amount');
+            $table->string('margin');
+            $table->string('ltr_amount');
+            $table->string('ltr_adjustment');
+            $table->string('invoice')->default('default.pdf');
+            $table->string('lc_document')->default('default.pdf');
+            $table->string('boe')->default('default.pdf');
+            $table->string('bank_statement')->default('default.pdf');            
+            $table->softDeletes();
